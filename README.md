@@ -349,6 +349,7 @@ Here is a list of all the environment variables
 ## Author
 
 cosmicice <catcosmicice@protonmail.ch>
+<br>
 John Crepezzi <john.crepezzi@gmail.com>
 
 ## License
