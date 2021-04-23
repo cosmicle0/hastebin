@@ -1,0 +1,93 @@
+/* Bittersweet for Hastebin by cosmicice <https://cosmicice.cat> */
+
+:root {
+	--bg: #161925;
+	--fg: #C3C7D1;
+
+	--lightgray: #F2EFEA;
+	--green: #71F79F;
+	--cyan: #00C1E4;
+	--blue: #7CB7FF;
+	--yellow: #F9DC5C;
+	--magenta: #C74DED;
+	--red: #ED254E;
+}
+
+.hljs {
+	display: block;
+	overflow: x-auto;
+	padding: 0.5em;
+	background: var(--bg);
+	color: var(--fg);
+}
+
+.hljs-comment,
+.hljs-quote {
+	color: var(--lightgray);
+}
+
+/* Bittersweet Green */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition {
+	color: var(--green);
+}
+
+/* Bittersweet Cyan */
+.hljs-number,
+.hljs-string,
+.hljs-meta .hljs-meta-string,
+.hljs-literal,
+.hljs-doctag,
+.hljs-regexp {
+	color: var(--cyan);
+}
+
+/* Bittersweet Blue */
+.hljs-title,
+.hljs-section,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+	color: var(--blue);
+}
+
+/* Bittersweet Yellow */
+.hljs-attribute,
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-class .hljs-title,
+.hljs-type {
+	color: var(--yellow);
+}
+
+/* Bittersweet Magenta */
+.hljs-symbol,
+.hljs-bullet,
+.hljs-subst,
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-link {
+	color: var(--magenta);
+}
+
+/* Bittersweet Red */
+.hljs-built_in,
+.hljs-deletion {
+	color: var(--red);
+}
+
+.hljs-formula {
+	background: var();
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
