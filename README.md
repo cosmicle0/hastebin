@@ -1,24 +1,6 @@
-# Haste
+# Hastebin
 
-Haste is an open-source pastebin software written in node.js, which is easily
-installable in any network.  It can be backed by either redis or filesystem,
-and has a very easy adapter interface for other stores.  A publicly available
-version can be found at [hastebin.com](http://hastebin.com)
-
-Major design objectives:
-
-* Be really pretty
-* Be really simple
-* Be easy to set up and use
-
-Haste works really well with a little utility called
-[haste-client](https://github.com/seejohnrun/haste-client), allowing you
-to do things like:
-
-`cat something | haste`
-
-which will output a URL to share containing the contents of `cat something`'s
-STDOUT.  Check the README there for more details and usages.
+A modified version of [seejohnrun](https://github.com/seejohnrun)'s [haste-server](https://github.com/seejohnrun/haste-server)
 
 ## Tested Browsers
 
@@ -63,7 +45,7 @@ for more information!
 
 Attempts to generate phonetic keys, similar to `pwgen`
 
-``` json
+```json
 {
   "type": "phonetic"
 }
@@ -73,7 +55,7 @@ Attempts to generate phonetic keys, similar to `pwgen`
 
 Generates a random key
 
-``` json
+```json
 {
   "type": "random",
   "keyspace": "abcdef"
@@ -82,6 +64,16 @@ Generates a random key
 
 The _optional_ keySpace argument is a string of acceptable characters
 for the key.
+
+### Random Words
+
+Generates a key using random words
+
+```json
+{
+  "type": "random-words"
+}
+```
 
 ## Storage
 
@@ -356,34 +348,9 @@ Here is a list of all the environment variables
 
 ## Author
 
+cosmicice <catcosmicice@protonmail.ch>
 John Crepezzi <john.crepezzi@gmail.com>
 
 ## License
 
-(The MIT License)
-
-Copyright © 2011-2012 John Crepezzi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the ‘Software’), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE
-
-### Other components:
-
-* jQuery: MIT/GPL license
-* highlight.js: Copyright © 2006, Ivan Sagalaev
-* highlightjs-coffeescript: WTFPL - Copyright © 2011, Dmytrii Nagirniak
+This Project is licensed under the [GPL-3.0 License](LICENSE).
